@@ -1,6 +1,6 @@
 # Описать функцию ShiftRight3(A, B, C),
 # выполняющую правый циклический сдвиг.
-a, b, c = map(int, input().split())
+a, b, c = map(float, input().split())
 def shiftRight3(a, b, c):
     lst = [a, b, c]
     i = 0
