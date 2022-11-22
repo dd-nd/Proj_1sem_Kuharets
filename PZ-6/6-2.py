@@ -4,7 +4,7 @@ from random import randint
 
 n = int(input("Количество элементов в массиве -> "))
 r = int(input("Введите число ->"))
-lst = [1, 2, 3, 4, 5]
+lst = []
 for i in range(n):
     a = randint(1, 20)
     lst.append(a)
@@ -15,7 +15,6 @@ print(lst)
 #     if lst[i - 1] + lst[i] > max_sum:
 #         k = i - 1
 # print(f'lst[{c + 1}] + lst[{c + 2}] = {max_sum}')
-
 def near_value(lst, r): # ближайшее число
     found = lst[0]
     for i in lst:
