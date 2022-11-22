@@ -3,26 +3,23 @@
 from random import randint
 
 n = int(input("Количество элементов в массиве -> "))
+r = int(input("Введите число ->"))
 lst = [1, 2, 3, 4, 5]
 for i in range(n):
-    a = randint(1, 150)
+    a = randint(1, 20)
     lst.append(a)
 print(lst)
-c = 1
-max_sum = lst[c] + lst[c + 1]
-for i in range(3, n):
-    if lst[i - 1] + lst[i] > max_sum:
-        k = i - 1
-print(f'lst[{c + 1}] + lst[{c + 2}] = {max_sum}')
+# c = 1
+# max_sum = lst[c] + lst[c + 1]
+# for i in range(3, n):
+#     if lst[i - 1] + lst[i] > max_sum:
+#         k = i - 1
+# print(f'lst[{c + 1}] + lst[{c + 2}] = {max_sum}')
 
-
-# ------------------------------------------
-# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# r = int(input("Введите число -> "))
-# x = len(lst)
-# i = 0
-# while i < x:
-#     if sum(lst[i], lst[i+1]) == r:
-#         print(lst[i], lst[i+1])
-#     i += 1
-# ## в процессе
+def near_value(lst, r): # ближайшее число
+    found = lst[0]
+    for i in lst:
+        if abs(i - r) < abs(found - r):
+            found = i
+    return found
+print(near_value(lst, r))
