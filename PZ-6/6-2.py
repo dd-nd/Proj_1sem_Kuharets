@@ -14,12 +14,15 @@ for i in range(3, n):
     if lst[i - 1] + lst[i] > max_sum:
         k = i - 1
 print(f'lst[{c + 1}] + lst[{c + 2}] = {max_sum}')
-# r = float(input("Введите число -> "))
+
+
+# ------------------------------------------
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# r = int(input("Введите число -> "))
 # x = len(lst)
 # i = 0
 # while i < x:
-#     if sum(int(lst[i]), int(lst[i+1])) == r:
+#     if sum(lst[i], lst[i+1]) == r:
 #         print(lst[i], lst[i+1])
 #     i += 1
-# print(type(lst))
-## в процессе
+# ## в процессе
