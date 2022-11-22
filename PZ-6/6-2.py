@@ -3,7 +3,7 @@
 from random import randint
 
 n = int(input("Количество элементов в массиве -> "))
-lst = []
+lst = [1, 2, 3, 4, 5]
 for i in range(n):
     a = randint(1, 150)
     lst.append(a)
