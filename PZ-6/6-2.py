@@ -5,20 +5,19 @@ from random import randint
 n = int(input("Количество элементов в списке -> "))
 r = int(input("Введите число ->"))
 lst = []
-for i in range(n):
+c = []
+for i in range(n): # напллняем список
     a = randint(1, 20)
     lst.append(a)
 print(lst)
-# c = 1
-# max_sum = lst[c] + lst[c + 1]
-# for i in range(3, n):
-#     if lst[i - 1] + lst[i] > max_sum:
-#         k = i - 1
-# print(f'lst[{c + 1}] + lst[{c + 2}] = {max_sum}')
-def near_value(lst, r): # ближайшее число
-    found = lst[0]
-    for i in lst:
+for i, x in enumerate(lst):
+    c.append(sum(lst[i:i+2]))
+c.pop(-1)
+print(c)
+def near_value(a, r): # ближайшее число к сумме соседних чисел
+    found = c[0]
+    for i in c:
         if abs(i - r) < abs(found - r):
             found = i
     return found
-print(near_value(lst, r))
+print(near_value(a, r))
