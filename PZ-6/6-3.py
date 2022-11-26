@@ -6,7 +6,7 @@ from random import randint
 n = int(input("Количество элементов в списке -> "))
 r = int(input("Введите число ->"))
 lst = []
-for i in range(n): # наполняем список
+for i in range(n):  # наполняем список
     a = randint(1, 20)
     lst.append(a)
 print(lst)

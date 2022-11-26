@@ -7,7 +7,7 @@ try:
     lst = []
     c = []
     dop = []
-    for i in range(n): # наполняем список
+    for i in range(n):  # наполняем список
         a = randint(1, 20)
         lst.append(a)
     print(lst)
