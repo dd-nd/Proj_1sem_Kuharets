@@ -16,7 +16,7 @@ try:
         c.append(sum(lst[i:i+2]))
     c.pop(-1)
     print(f'Суммы соседних чисел -> {c}')
-    def near_v(a, r): # ближайшее число к сумме соседних чисел
+    def near_v(a, r):  # ближайшее число к сумме соседних чисел
         found = c[0]
         for i in c:
             if abs(i - r) < abs(found - r):
