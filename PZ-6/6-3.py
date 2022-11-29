@@ -13,7 +13,7 @@ for i in range(n):  # наполняем список
     lst.append(a)
 print(lst)
 x = 0
-while x < k:
+while x < k: # сдвиг влево
     lst.pop(0)
     lst.append(0)
     x += 1
