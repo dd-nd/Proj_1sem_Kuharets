@@ -7,8 +7,14 @@
 # Индекс 1-го максимального эл-та:
 # Произведение эл-ов средней трети:
 
-lst = [1, 4, -90, 17, -3, -2, 10]
-print(type(lst))
+lst = [1, 4, -90, 17, -3, -2, 10, 3, 20]
+x = lst[3] * lst[4] * lst[5]
 # f = open('zad1.txt', 'w')
-# f.write('fff')
+# f.write(print(lst))
+# for element in lst:
+#     f.write(element)
+#     f.write(' ')
+# f.write(print(len(lst)))
+# f.write(print(max(lst)))
+# f.write(x)
 # f.close()
