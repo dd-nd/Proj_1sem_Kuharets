@@ -10,7 +10,4 @@ for i in a:
     for item in i:
         if x <= item and item % 4 == 0 and item > 06:
             x = item
-print(x)
-# print(f'Максимальный эл-т -> {x}')
-
-# print(max(list(x for x in a)))
+print(f'Максимальный эл-т -> {x}')
