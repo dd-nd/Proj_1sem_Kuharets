@@ -132,14 +132,3 @@
 
 # print("Площадь прямоугольника:", area)
 # print("Периметр прямоугольника:", perimeter)
-
-# Наследование
-class Geom:
-    name = 'Geom'
-
-class Line(Geom):
-    def draw(self):
-        print('Построение линии')
-
-l = Line()
-print(l.name)
