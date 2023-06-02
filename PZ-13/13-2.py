@@ -8,6 +8,6 @@ print(a)
 x = 0
 for i in a:
     for item in i:
-        if x <= item and item % 4 == 0 and item > 06:
+        if x <= item and item % 4 == 0 and item > 0:
             x = item
 print(f'Максимальный эл-т -> {x}')
