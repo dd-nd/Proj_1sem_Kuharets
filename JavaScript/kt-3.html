@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- <form id="aform">
+    <label for="shape">Геометрическая фигура:</label>
+    <input type="text" id="shape" name="shape" required><br><br>
+    <label for="color">Какого цвета должна быть фигура:</label>
+    <input type="text" id="color" name="color" required><br><br>
+    <input type="submit" value="Отправить">
+  </form>
+
+  <script>
+    document.getElementById("aform").addEventListener("submit", function(event) {
+        event.preventDefault(); // Предотвращаем отправку формы
+        let shape = document.getElementById("shape").value;
+        let color = document.getElementById("color").value;
+        let mes = "Мне нравится " + shape + " " + color + " цвета.";
+        alert(mes);
+        
+        let leng = shape.length;
+        alert("Длина фигуры: " + leng);
+    });
+  </script> -->
+
+  
+    <form>
+        <label for="name-input">Введите имя:</label>
+        <input type="text" id="name" />
+  
+        <p>Что вам нравится больше?</p>
+        <label>
+            <input type="radio" name="1" id="ice" />Мороженое
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="1" id="chocolate" />Шоколад
+        </label>
+        <br><br>
+        <button type="button" id="btn">Отправить</button>
+    </form>
+  
+    <p id="status"></p>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nameInput = document.getElementById('name');
+            const iceCreamCheckbox = document.getElementById('ice');
+            const chocolateCheckbox = document.getElementById('chocolate');
+            const submitButton = document.getElementById('btn');
+            const status = document.getElementById('status');
+  
+            nameInput.addEventListener('input', function() {
+                const message = 'Внимательно вводите свое имя';
+                status.textContent = message;
+            });
+    
+            iceCreamCheckbox.addEventListener('change', function() {
+                const message = 'Вы выбрали ' + (iceCreamCheckbox.checked ? 'мороженое' : '');
+                status.textContent = message;
+            });
+    
+            chocolateCheckbox.addEventListener('change', function() {
+                const message = 'Вы выбрали ' + (chocolateCheckbox.checked ? 'шоколад' : '');
+                status.textContent = message;
+            });
+    
+            submitButton.addEventListener('click', function() {
+                alert('Спасибо за участие в опросе!');
+            });
+        });
+    </script>
+</body>
+</html>
